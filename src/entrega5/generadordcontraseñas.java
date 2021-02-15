@@ -28,11 +28,6 @@ import static entrega5.simbolos.getPasswords;
 
 public class generadordcontraseñas extends JFrame implements ActionListener {
     private int salir = 1;
-    JMenuBar menuBar;
-    JMenu menu, submenu;
-    JMenuItem menuItem;
-    JRadioButtonMenuItem rbMenuItem;
-    JCheckBoxMenuItem cbMenuItem;
     private Random random = new Random();
     private JButton boton1;
     public JButton boton2;
@@ -48,7 +43,7 @@ public class generadordcontraseñas extends JFrame implements ActionListener {
     public static String simbolo = "!·$%&/()=?¿@#*]}[{";
     public static JSlider slider = new JSlider(JSlider.HORIZONTAL, 0, 20, 4);
     private JLabel label;
-    private URL url = getClass().getResource("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fferrelaeconomica.com.mx%2Fwp-content%2Fuploads%2F2019%2F12%2FCH-20P.jpg&f=1&nofb=1");
+
 
     generadordcontraseñas() {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -123,11 +118,7 @@ public class generadordcontraseñas extends JFrame implements ActionListener {
         setVisible(true);
     }
 
-    private Object imageUpdate(String s) {
 
-        Image imagen = new ImageIcon(url).getImage();
-        return imagen;
-    }
 
 
     public static void main(String[] args) {
