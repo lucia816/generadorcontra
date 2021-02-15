@@ -58,19 +58,19 @@ public class generadordcontraseñas extends JFrame implements ActionListener {
 
 
         JPanel p1 = new JPanel();
-        p1.setBackground(new Color(25, 208, 210));
+
         add(p1);
         JPanel p5 = new JPanel();
         p5.add(label, BorderLayout.NORTH);
         p1.add(p5);
 
         JPanel p3 = new JPanel();
-        p3.setLayout(new GridLayout(4, 5, 4, 4));
+        p3.setLayout(new GridLayout(5, 5, 4, 4));
         JLabel contraseña = new JLabel("Contraseña generada: ");
         p3.add(contraseña);
         generado = new JTextField("");
         generado.setBounds(300, 300, 300, 300);
-        generado.setBackground(new Color(11, 88, 226));
+        generado.setBackground(new Color(240, 241, 243));
         p3.add(generado, BorderLayout.CENTER);
 
 
@@ -108,6 +108,8 @@ public class generadordcontraseñas extends JFrame implements ActionListener {
         slider.setPaintLabels(true);
         int posicionslider = slider.getValue();
 
+
+
         p2.add(p4, BorderLayout.EAST);
         add(p1, BorderLayout.NORTH);
         add(p3, BorderLayout.SOUTH);
@@ -115,9 +117,9 @@ public class generadordcontraseñas extends JFrame implements ActionListener {
 
         boton1.addActionListener(this);
 
-       
 
-        setSize(700, 500);
+
+        setSize(700, 600);
         setVisible(true);
     }
 
